@@ -150,6 +150,10 @@ h1 {
           animation-name: changeColor;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes changeColor {

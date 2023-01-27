@@ -116,6 +116,9 @@ h1{
     background-color: #006466;
     animation-name: changeColor;
     animation-duration: 4s;     //if not specified will not work coz default value is 0s
+    // animation-delay: 2s; //specifies delay for the start of animation
+    animation-iteration-count: infinite; //loop
+    animation-timing-function: ease-in-out; // speed curve of an animation
 }
 
 @keyframes changeColor{
