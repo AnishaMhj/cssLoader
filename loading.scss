@@ -103,10 +103,12 @@ p {
 }
 
 //learning through simple animations
-// simpleAnimation CSS
 
+/* simpleAnimation CSS
+=================================== */
 h1{
     color: #fff;
+    padding: 20px;
 }
 
 .animateHere{
@@ -146,3 +148,33 @@ h1{
     }
     
 }
+
+/* loader CSS
+=================================== */
+.loader{
+    width: 120px;
+    height: 120px;
+    border: solid 5px #272640;
+    border-top:solid 5px #006466;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    //in short cut
+    //-webkit-animation: spin 2s linear infinite; /* Safari */
+//   animation: spin 2s linear infinite;
+}
+
+//css transform property applies a 2D or 3D transformation to an element 
+//allows to rotate, scale, move, skew, etc., elements
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

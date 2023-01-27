@@ -137,8 +137,11 @@ p {
   font-size: 1.2rem;
 }
 
+/* simpleAnimation CSS
+=================================== */
 h1 {
   color: #fff;
+  padding: 20px;
 }
 
 .animateHere {
@@ -209,6 +212,45 @@ h1 {
     background-color: #4d194d;
     left: 0px;
     top: 0px;
+  }
+}
+
+/* loader CSS
+=================================== */
+.loader {
+  width: 120px;
+  height: 120px;
+  border: solid 5px #272640;
+  border-top: solid 5px #006466;
+  border-radius: 50%;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=loading.css.map */
